@@ -1,14 +1,33 @@
-backend:
-  name: git-gateway
+bbackend:
+  name: github
+  repo: barrafleet-web/barrafleet
   branch: main
 
+media_folder: "admin/uploads"
+public_folder: "/admin/uploads"
+
+media_library:
+  name: uploadcare
+
 collections:
+  - name: "site"
+    label: "Site Settings"
+    files:
+      - file: "data/site.json"
+        label: "Site Info"
+        name: "siteinfo"
+        fields:
+          - { label: "Title", name: "title", widget: "string" }
+          - { label: "Tagline", name: "tagline", widget: "string" }
+
   - name: "menu"
     label: "Menu"
     files:
-      - label: "Menu Data"
-        name: "menu"
-        file: "data/menu.json"
-        format: "json"
+      - file: "data/menu.json"
+        label: "Menu Items"
+        name: "menuitems"
         fields:
-          - { label: "Categories", name: "categories", widget: "list" }
+          - { label: "Items", name: "items", widget: "list", fields: [
+              { label: "Name", name: "name", widget: "string" },
+              { label: "Price", name: "price", widget: "string" }
+            ] }
