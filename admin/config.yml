@@ -5,8 +5,8 @@ backend:
   base_url: https://github-oauth.barrafleet.workers.dev
   auth_endpoint: auth
   
-media_folder: "admin/uploads"
-public_folder: "/admin/uploads"
+media_folder: "data/uploads"
+public_folder: "/data/uploads"
 
 media_library:
   name: uploadcare
