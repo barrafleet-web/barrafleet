@@ -3,17 +3,7 @@ backend:
   repo: barrafleet-web/barratapas
   branch: main
   base_url: https://github-oauth.barrafleet.workers.dev
-  auth_endpoint: auth
+  auth_endpoint: /auth
 
 media_folder: "uploads"
 public_folder: "/uploads"
-
-collections:
-  - name: "pages"
-    label: "Pages"
-    files:
-      - file: "index.html"
-        label: "Homepage"
-        name: "home"
-        fields:
-          - { label: "Body", name: "body", widget: "markdown" }
