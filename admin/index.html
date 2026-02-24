@@ -4,9 +4,12 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width,initial-scale=1" />
     <title>Barra CMS</title>
-
-    <!-- IMPORTANT: pin version (do NOT use ^3.0.0) -->
-    <script src="https://unpkg.com/decap-cms@3.0.0/dist/decap-cms.js"></script>
   </head>
-  <body></body>
+
+  <body>
+    <noscript>You must enable JavaScript to use the CMS.</noscript>
+
+    <!-- IMPORTANT: load Decap at the END of body so document.body exists -->
+    <script src="https://unpkg.com/decap-cms@3.0.0/dist/decap-cms.js"></script>
+  </body>
 </html>
