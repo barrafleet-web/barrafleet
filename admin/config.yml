@@ -11,7 +11,7 @@ backend:
 media_library:
   name: uploadcare
   config:
-    publicKey: "PASTE_YOUR_UPLOADCARE_PUBLIC_KEY_HERE"
+    publicKey: "5b72a12628c046973889"
 
 media_folder: "uploads"
 public_folder: "/uploads"
