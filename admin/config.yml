@@ -4,7 +4,14 @@ backend:
   branch: main
   base_url: https://github-oauth.barrafleet.workers.dev
   auth_endpoint: auth
-  api_root: https://api.github.com
+
+# REQUIRED in Decap v3 (prevents the media_library error)
+media_library:
+  name: uploadcare
+
+# If you don't want Uploadcare, use this instead:
+# media_library:
+#   name: github
 
 media_folder: "uploads"
 public_folder: "/uploads"
