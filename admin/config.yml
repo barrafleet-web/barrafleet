@@ -1,3 +1,5 @@
+site_url: https://barratapas.pages.dev
+
 backend:
   name: github
   repo: barrafleet-web/barratapas
@@ -5,13 +7,11 @@ backend:
   base_url: https://github-oauth.barrafleet.workers.dev
   auth_endpoint: auth
 
-# REQUIRED in Decap v3 (prevents the media_library error)
+# REQUIRED (this is what your error is about)
 media_library:
   name: uploadcare
-
-# If you don't want Uploadcare, use this instead:
-# media_library:
-#   name: github
+  config:
+    publicKey: "PASTE_YOUR_UPLOADCARE_PUBLIC_KEY_HERE"
 
 media_folder: "uploads"
 public_folder: "/uploads"
