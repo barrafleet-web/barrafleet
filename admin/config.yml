@@ -8,6 +8,11 @@ backend:
 media_folder: "uploads"
 public_folder: "/uploads"
 
+media_library:
+  name: uploadcare
+media_library_config:
+  publicKey: "5b72a12628c046973889"
+
 collections:
   - name: "pages"
     label: "Pages"
